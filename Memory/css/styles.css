@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  background: #00d4f0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+#stage{
+  margin: 80px auto 30px;
+  width: 600px;
+}
+
+.card-container{
+  margin: 0 10px 20px 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 60;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  position: relative;
+  perspective: 100px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;;
+  transform-style: preserve-3d;
+  transition: transform .8s;
+}
+
+.card.open {
+  transform: rotateY(180deg);
+}
+
+.card-back, .card-front{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background: #03a9f4;
+}
+
+.card-front {
+  background: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+#btn {
+  margin: 0 auto;
+  width: 200px;
+  padding: 10px;
+  background: #0af;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#btn.visible{
+  opacity: 1;
+}
+
+
+
+
+
+/*
+#container{
+  width: 170px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#board {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel {
+  cursor:  pointer;
+  background: #00aaff;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 #0088cc;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.panel.hidden::after{
+  content: '';
+  cursor: pointer;
+  background: lightgray;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 lightgray;
+  position: absolute;;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+
+
+.panel.flipped{
+  background: lightgray;
+  box-shadow: 0 4px 0 gray;
+}
+
+#btn{
+  cursor: pointer;
+  background: #f44336;
+  box-shadow: 0 5px 0 #d1483e;
+  padding: 7px;
+  margin-top:  10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#btn.restart{
+  background: #24b168;
+  box-shadow: 0 5px 0 #20995b;
+}
+
+
+#btn:hover{
+  opacity: .8;
+}
+
+#btn:active{
+  margin-top: 15px;
+  box-shadow: none;
+}
+
+
+#score {
+  text-align: right;
+  margin: 10px 0 ;
+  font-size: 24px;
+} */
